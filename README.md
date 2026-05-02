@@ -20,31 +20,31 @@ et de l'architecture **Modulith**.
 
 ---
 
-## Architecture du projet
+## 🏗️ Architecture du projet
 
-Le projet suit une architecture **Modulith + DDD**
-organisée en couches avec un seul Bounded Context : `task`.
+Le projet suit une architecture **Modulith + DDD** organisée en couches avec un seul Bounded Context : `task`.
 
-src/
-└── main/java/com/todo/todo_api/
-└── task/                            ← Bounded Context "Task"
-│
-├── domain/                      ← Cœur métier (aucune dépendance externe)
-│   ├── Task.java                ← Entité JPA principale
-│   └── TaskStatus.java          ← Enum : TODO | IN_PROGRESS | DONE
-│
-├── application/                 ← Cas d'usage (orchestration)
-│   ├── TaskService.java         ← Toute la logique métier
-│   └── dto/
-│       ├── TaskRequest.java     ← Objet reçu depuis le client
-│       └── TaskResponse.java    ← Objet retourné au client
-│
-├── infrastructure/              ← Couche technique (JPA)
-│   └── TaskRepository.java      ← Accès base de données
-│
-└── presentation/                ← Exposition REST
-└── TaskController.java      ← Endpoints HTTP
-
+```
+src/main/java/com/todo/todo_api/
+|
++-- task/
+    |
+    +-- domain/
+    |   +-- Task.java
+    |   +-- TaskStatus.java
+    |
+    +-- application/
+    |   +-- TaskService.java
+    |   +-- dto/
+    |       +-- TaskRequest.java
+    |       +-- TaskResponse.java
+    |
+    +-- infrastructure/
+    |   +-- TaskRepository.java
+    |
+    +-- presentation/
+        +-- TaskController.java
+```
 
 ### Principe des couches
 
