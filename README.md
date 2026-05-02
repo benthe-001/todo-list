@@ -20,7 +20,7 @@ et de l'architecture **Modulith**.
 
 ---
 
-## 🏗️ Architecture du projet
+## Architecture du projet
 
 Le projet suit une architecture **Modulith + DDD** organisée en couches avec un seul Bounded Context : `task`.
 
