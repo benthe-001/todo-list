@@ -77,13 +77,13 @@ cd to-do-list
 mvn spring-boot:run -DskipTests
 ```
 
-L'application démarre sur : `http://localhost:8081`
+L'application démarre sur : `http://localhost:8080`
 
 ---
 
 ##  Documentation Swagger
 
-URL : `http://localhost:8081/swagger-ui/index.html`
+URL : `http://localhost:8080/swagger-ui/index.html`
 
 La documentation interactive permet de :
 - Visualiser tous les endpoints disponibles
