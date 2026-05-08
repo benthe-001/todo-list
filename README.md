@@ -83,7 +83,7 @@ L'application démarre sur : `http://localhost:8080`
 
 ##  Documentation Swagger
 
-URL : `http://localhost:8080/swagger-ui/index.html`
+URL : `http://localhost:8082/swagger-ui/index.html`
 
 La documentation interactive permet de :
 - Visualiser tous les endpoints disponibles
@@ -96,7 +96,7 @@ La documentation interactive permet de :
 
 ## ️ Console H2 (base de données)
 
-URL : `http://localhost:8081/h2-console`
+URL : `http://localhost:8082/h2-console`
 
 | Champ    | Valeur                  |
 |----------|-------------------------|
